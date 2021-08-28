@@ -1,0 +1,45 @@
+/**
+ * == Experience ==
+ */
+ .job-detail {
+	margin-bottom: 70px;
+	opacity: 0;
+	transition: opacity .8s;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	.designation {
+		display: flex;
+		margin-bottom: 10px;
+		align-items: center;
+
+		h6, span {
+			font-size: 12px;
+			margin-top: 4px;
+			margin-left: 10px;
+		}
+	}
+
+	.work-duration {
+		font-size: 14px;
+		color: #595959;
+	}
+
+	.responsibilities {
+		margin-top: 18px;
+
+		ul {
+			padding-left: 25px;
+		}
+		li {
+			margin-bottom: 10px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+}

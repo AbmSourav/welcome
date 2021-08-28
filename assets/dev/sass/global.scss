@@ -1,0 +1,140 @@
+/**
+ * == Global ==
+ *	Default
+ */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+::-moz-selection {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+}
+::selection {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+}
+body.page-template-custom-front-page {
+	background-color: #000318;
+	overflow: hidden;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	position: relative;
+	overflow-x: hidden;
+}
+
+.body-bg-image {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: -2;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+
+	&:before {
+		content: '';
+		position: absolute;
+		z-index: -1;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-color: rgba(0, 0, 0, 0.45);
+	}
+}
+
+/**
+ * == Global ==
+ *	Typography
+ */
+h1 {
+	font-size: 32px;
+}
+h2 {
+	font-size: 25px;
+}
+h3 {
+	font-size: 23px;
+}
+h4 {
+	font-size: 21px;
+}
+
+p {
+	font-size: 16px;
+}
+
+/**
+ * == Global ==
+ *	Sections Common
+ */
+.content-wrapper {
+	width: 0;
+	height: 0;
+	color: #272727;
+	overflow: hidden;
+	bottom: -300px;
+	transform-origin: 50% 50%;
+	transform: rotateX(8deg) rotateY(70deg) scale(1.25);
+	transition: transform .5s, bottom .3s;
+
+	&.show-content {
+		position: fixed;
+		width: 65vw;
+		height: 75vh;
+		bottom: 50%;
+		transform: rotateX(0deg) rotateY(0deg) translateY(50%) scale(1);
+		background-color: rgba(255, 255, 255, .94);
+	}
+
+	.content-title, .content-close {
+		color: #151515;
+	}
+}
+
+.content-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color:rgba(255, 255, 255, 0.6);
+	padding: 0 20px;
+}
+.content-inner-wrapper {
+	padding: 60px 110px 0;
+	height: 100%;
+	overflow-y: auto;
+
+	&::-webkit-scrollbar {
+		width: 6px;
+	}
+	&::-webkit-scrollbar-track {
+		background: rgba(255, 255, 255, 0.1);
+	}
+	&::-webkit-scrollbar-thumb {
+		background-color: #3c93eb;
+		border-radius: 20px;
+	}
+}
+.card-wrapper {
+	margin-bottom: 100px;
+}
+.content-close {
+	display: inline-block;
+	font-size: 22px;
+	cursor: pointer;
+	padding: 12px;
+}

@@ -1,0 +1,70 @@
+/**
+ * == Portfolio ==
+ */
+.portfolio {
+
+	.card-wrapper {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 80px;
+		grid-row: 1/3;
+		grid-column: 2;
+	}
+
+	.work-card {
+		display: flex;
+		padding: 20px 25px;
+		background-color: rgba(60, 54, 54, 0.1);
+		border-radius: 4px;
+		opacity: 0;
+		transition: opacity .2s ease-in;
+		position: relative;
+
+		.work-media {
+			position: absolute;
+			top: 10px;
+			right: 15px;
+
+			img {
+				width: 65px;
+				height: 60px;
+				border-radius: 5px;
+			}
+		}
+
+		.work-content {
+			width: 100%;
+
+			.short-description {
+				font-size: 14px;
+				line-height: 1.5;
+			}
+		}
+		.work-meta {
+			margin-bottom: 15px;
+			font-size: 12px;
+
+			a {
+				color: #272727;
+				font-size: 16px;
+				padding: 6px;
+			}
+		}
+		.work-title {
+			font-size: 18px;
+			margin-bottom: 5px;
+
+			a {
+				color: #272727;
+				text-decoration: none;
+
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+
+	}
+
+}
+
