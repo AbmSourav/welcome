@@ -10,13 +10,13 @@
 		setTimeout(function() {
 			bodyBg.css("background-image", "url(" + bodyBg.attr('data-lazy') +")");
 			profileImage.attr('src', profileImage.attr('data-lazy'))
-		}, 20)
-		profileImage.addClass('show')
+			profileImage.addClass('show')		
 
-		profileImage.css('border-radius', '30%');
-		mainMenuNav.addClass('menu-scale');
-		hr.css('height', '250px');		
-		hr.css('opacity', '1');			
+			profileImage.css('border-radius', '30%');
+			mainMenuNav.addClass('menu-scale');
+			hr.css('height', '250px');		
+			hr.css('opacity', '1');	
+		}, 20)
 		
 		setTimeout(function() {
 			profileImage.css('border-radius', '50%');
