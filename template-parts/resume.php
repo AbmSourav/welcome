@@ -16,7 +16,7 @@ $download_link = get_field( 'download_link', 'option' );
 	<div class="content-inner-wrapper">
 		<a download href="<?php echo esc_url( $download_link ); ?>" class="resume-download" title="Download Resume"><i class="fas fa-file-download"></i></a>
 		<div class="resume-wrapper">
-			<img src="<?php echo esc_url( wp_get_attachment_image_url( $resume['id'], 'full' ) ); ?>" alt="Resume">
+			<img loading="lazy" src="<?php echo esc_url( wp_get_attachment_image_url( $resume['id'], 'full' ) ); ?>" alt="Resume">
 		</div>
 	</div>
 </section>

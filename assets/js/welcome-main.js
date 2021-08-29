@@ -1,17 +1,16 @@
 ;(function($) {
-	
-	$(document).ready(function() {
+
+	$(window).load(function() {
 		const bodyBg = $('.body-bg-image');
-		const contentInput = $('.content-wrapper');
-		const navListItem = $('.main-menu__item')
-		const navTitle = $('.nav-title');
 		const profileImage = $('.profile-image');
 		const mainMenuNav = $('.main-menu nav');
 		const hr = $('.hr');
 
 		// images lazy loading
-		bodyBg.css("background-image", "url(" + bodyBg.attr('data-lazy') +")");
-		profileImage.attr('src', profileImage.attr('data-lazy'))
+		setTimeout(function() {
+			bodyBg.css("background-image", "url(" + bodyBg.attr('data-lazy') +")");
+			profileImage.attr('src', profileImage.attr('data-lazy'))
+		}, 20)
 		profileImage.addClass('show')
 
 		profileImage.css('border-radius', '30%');
@@ -26,7 +25,13 @@
 			hr.css('height', '');
 			hr.css('opacity', '');
 		}, 400);
-
+	});
+	
+	$(document).ready(function() {
+		const contentInput = $('.content-wrapper');
+		const navListItem = $('.main-menu__item')
+		const navTitle = $('.nav-title');
+		
 		$(navListItem).hover(function () {
 			navTitle.addClass('show-title');
 			navTitle.html('<h4>' + $(this).data('title') + '</h4>');
