@@ -26,7 +26,9 @@ if ( empty( $projects ) ) return;
 							<span class="contribution-status">
 								<?php echo esc_html( $project['cotribution_status'] ); ?>
 							</span>
-							<a href="<?php echo esc_url( $project['source_code_link'] ); ?>" title="Source Code"><i class="fab fa-github"></i></a>
+							<?php if ( ! empty( $project['source_code_link'] ) ) : ?>
+								<a href="<?php echo esc_url( $project['source_code_link'] ); ?>" title="Source Code"><i class="fab fa-github"></i></a>
+							<?php endif; ?>
 						</div>
 						<p class="short-description">
 							<?php echo esc_html( $project['project_description'] ); ?>
