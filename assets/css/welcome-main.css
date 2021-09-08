@@ -570,7 +570,7 @@ p
 
     opacity: 0;
     border-radius: 4px;
-    background-color: rgba(60, 54, 54, .1);
+    background-color: rgba(60, 54, 54, .15);
 }
 .portfolio .work-card .work-media
 {
@@ -952,11 +952,12 @@ p
     .content-wrapper.show-content
     {
         color: #fff;
-        background-color: rgba(4, 13, 21, .25);
+        background-color: rgba(25, 50, 119, .2);
         text-shadow: 1px 1px rgba(41, 41, 41, .8);
 
-        -webkit-backdrop-filter: blur(15px) brightness(160%) contrast(85%);
-                backdrop-filter: blur(15px) brightness(140%) contrast(80%);
+        -webkit-backdrop-filter: blur(15px);
+
+                backdrop-filter: blur(15px);
     }
     .content-wrapper .content-inner-wrapper::-webkit-scrollbar-track
     {
@@ -964,7 +965,7 @@ p
     }
     .content-wrapper .content-header
     {
-        background-color: rgba(255, 255, 255, .1);
+        background-color: rgba(84, 126, 239, .1);
     }
     .content-wrapper .content-title,
     .content-wrapper .content-close
@@ -974,10 +975,11 @@ p
     }
     .main-menu .nav-title
     {
-        background-color: rgba(255, 255, 255, .1);
+        background-color: rgba(84, 126, 239, .2);
 
-        -webkit-backdrop-filter: blur(5px) brightness(130%);
-                backdrop-filter: blur(5px) brightness(130%);
+        -webkit-backdrop-filter: blur(5px);
+
+                backdrop-filter: blur(5px);
     }
     .social-media li a
     {
