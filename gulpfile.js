@@ -8,6 +8,7 @@ const rename = require("gulp-rename");
 const concat = require("gulp-concat");
 const uglify = require("gulp-uglify");
 const imagemin = require('gulp-imagemin');
+const sourcemaps = require('gulp-sourcemaps');
 
 const sassMain = "assets/dev/sass/welcome-main.scss";
 const sassFiles = "assets/dev/sass/**/*.scss";
@@ -32,6 +33,7 @@ const AUTOPREFIXER_BROWSERS = [
 // Frontend css
 function style() {
     return gulp.src(sassMain)
+		.pipe(sourcemaps.init())
         .pipe(plumberNotifier())
         .pipe(sass())
         .pipe(csscomb())
@@ -39,6 +41,7 @@ function style() {
         .pipe(gulp.dest("./assets/css"))
         .pipe(csso())
         .pipe(rename({suffix: ".min"}))
+		.pipe(sourcemaps.write('.'))
         .pipe(gulp.dest("assets/css"))
 }
 

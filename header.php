@@ -13,7 +13,7 @@ defined( 'ABSPATH' ) || die();
 	<meta name="googlebot" content="index, follow"/>
 
 	<style>
-	.main-menu__item[data-title="Skills"] i {
+	.main-menu__item[data-title="About & Skills"] i {
 		background: -webkit-linear-gradient(to bottom, #f02df7 0%,#0236ad 100%);
 		background: -moz-linear-gradient(to bottom, #f02df7 0%,#0236ad 100%);
 		background: linear-gradient(to bottom, #f02df7 0%,#0236ad 100%);

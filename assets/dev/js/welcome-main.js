@@ -34,7 +34,7 @@
 		
 		$(navListItem).hover(function () {
 			navTitle.addClass('show-title');
-			navTitle.html('<h4>' + $(this).data('title') + '</h4>');
+			navTitle.html($(this).data('title'));
 		}, function() {
 			navTitle.removeClass('show-title');
 			navTitle.html('');
@@ -55,7 +55,7 @@
 					contentClose();
 				}
 				
-				if (listData == 'Skills') {
+				if (listData == 'About & Skills') {
 					skillsAnimation();
 				}
 				if (listData == 'Portfolio') {

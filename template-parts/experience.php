@@ -13,16 +13,18 @@ if ( empty( $company ) ) return;
 	</div>
 	
 	<div class="content-inner-wrapper">
-		<?php foreach ( $company as $team ) : ?>
-			<div class="job-detail">
-				<div class="designation">
-					<h4><?php echo esc_html( $team['designation'] ); ?></h4>
-					<span><i class="fas fa-minus"></i></span>
-					<h6><?php echo esc_html( $team['company_name'] ); ?></h6>
+		<div class="job-wrapper">
+			<?php foreach ( $company as $team ) : ?>
+				<div class="job-detail">
+					<div class="designation">
+						<h4><?php echo esc_html( $team['designation'] ); ?></h4>
+						<span><i class="fas fa-minus"></i></span>
+						<h6><?php echo esc_html( $team['company_name'] ); ?></h6>
+					</div>
+					<div class="work-duration"><?php echo esc_html( $team['time_duration'] ); ?></div>
+					<div class="responsibilities"><?php echo $team['job_detail']; ?></div>
 				</div>
-				<div class="work-duration"><?php echo esc_html( $team['time_duration'] ); ?></div>
-				<div class="responsibilities"><?php echo $team['job_detail']; ?></div>
-			</div>
-		<?php endforeach; ?>
+			<?php endforeach; ?>
+		</div>
 	</div>
 </section>
