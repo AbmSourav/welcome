@@ -21,7 +21,7 @@ get_header();
 	<div class="main-menu">
 		<nav>
 			<ul class="main-menu__list">
-				<li id="skills" class="main-menu__item" data-title="About & Skills"><i class="fas fa-list-alt"></i></li>
+				<li id="skills" class="main-menu__item" data-title="About & Skills"><i class="fas fa-poll-h"></i></li>
 				<li id="portfolio" class="main-menu__item" data-title="Portfolio"><i class="fas fa-portrait"></i></li>
 				<li id="experience" class="main-menu__item" data-title="Experience"><i class="fas fa-briefcase"></i></li>
 				<li id="resume" class="main-menu__item" data-title="Resume"><i class="fas fa-file-alt"></i></li>

@@ -6,10 +6,9 @@
 		&.show-content {
 			color: #fff;
 			text-shadow: 1px 1px rgba(41, 41, 41, .8);
-			background-color: rgba(25, 50, 119, .2);
-			// -webkit-backdrop-filter: blur(15px) brightness(160%) contrast(85%);
-			// backdrop-filter: blur(15px) brightness(140%) contrast(80%);
-			backdrop-filter: blur(15px);
+			background-color: rgba(13, 26, 62, .4);
+			backdrop-filter: blur(10px);
+			border: 1px solid rgba(13,26,62,.65);
 		}
 
 		.content-inner-wrapper {

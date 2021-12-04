@@ -14,9 +14,9 @@ defined( 'ABSPATH' ) || die();
 
 	<style>
 	.main-menu__item[data-title="About & Skills"] i {
-		background: -webkit-linear-gradient(to bottom, #f02df7 0%,#0236ad 100%);
-		background: -moz-linear-gradient(to bottom, #f02df7 0%,#0236ad 100%);
-		background: linear-gradient(to bottom, #f02df7 0%,#0236ad 100%);
+		background: -webkit-linear-gradient(to bottom, #0699df 0%,#052852 100%);
+		background: -moz-linear-gradient(to bottom, #0699df 0%,#052852 100%);
+		background: linear-gradient(to bottom, #0699df 0%,#052852 100%);
 		-webkit-background-clip: text;
 		-moz-background-clip: text;
 		background-clip: text;
@@ -34,8 +34,8 @@ defined( 'ABSPATH' ) || die();
 	}
 
 	.main-menu__item[data-title="Experience"] i {
-		background: -webkit-linear-gradient(to bottom, #f0c005 0%,#c11e0d 100%); 
-		background: linear-gradient(to bottom, #f0c005 0%,#c11e0d 100%);
+		background: -webkit-linear-gradient(to bottom, #026028 0%,#98bd07 100%); 
+		background: linear-gradient(to bottom, #026028 0%,#98bd07 100%);
 		-webkit-background-clip: text;
 		-moz-background-clip: text;
 		background-clip: text;
@@ -52,8 +52,8 @@ defined( 'ABSPATH' ) || die();
 	}
 
 	.main-menu__item[data-title="Contact"] i {
-		background: -moz-linear-gradient(to bottom, #dd0505 0%,#5921f4 100%);
-		background: linear-gradient(to bottom, #dd0505 0%,#5921f4 100%);
+		background: -moz-linear-gradient(to bottom, #f954be 0%,#0542b1 100%);
+		background: linear-gradient(to bottom, #f954be 0%,#0542b1 100%);
 		-webkit-background-clip: text;
 		-moz-background-clip: text;
 		background-clip: text;

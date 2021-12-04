@@ -3,12 +3,12 @@
  */
  .main-menu {
 	position: fixed;
-	bottom: 30px;
+	bottom: 22px;
 
 	&:after, &:before {
 		position: absolute;
 		display: block;
-		width: 400px;
+		width: 435px;
 		content: '';
 	}
 	&:before {
@@ -29,9 +29,8 @@
 
 	nav {
 		position: absolute;
-		transition: all .2s;
 		left: 50%;
-		bottom: 30px;
+		bottom: 31px;
 		transition: bottom .3s;
 		transform: translateX(-50%);
 	}
@@ -45,7 +44,7 @@
 	position: relative;
 	list-style: none;
 	cursor: pointer;
-	font-size: 40px;
+	font-size: 50px;
 	margin-right: 35px;
 	color: #fff;
 	transform: scale(1);
