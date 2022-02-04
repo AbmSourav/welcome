@@ -6,9 +6,9 @@
 		&.show-content {
 			color: #fff;
 			text-shadow: 1px 1px rgba(41, 41, 41, .8);
-			background-color: rgba(13, 26, 62, .4);
-			backdrop-filter: blur(10px);
-			border: 1px solid rgba(13,26,62,.65);
+			background-color: rgba(8, 14, 30, .4);
+			backdrop-filter: blur(10px) saturate(115%);
+			border: 1px solid rgba(37, 59, 118, .10);
 		}
 
 		.content-inner-wrapper {

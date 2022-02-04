@@ -232,6 +232,10 @@ p
     height: 100%;
     padding: 60px 110px 0;
 }
+.content-inner-wrapper ::-webkit-scrollbar
+{
+    display: block;
+}
 .content-inner-wrapper::-webkit-scrollbar
 {
     width: 6px;
@@ -446,9 +450,9 @@ p
 }
 .about .profile-image
 {
-    width: 100px;
-    height: 100px;
-    margin-bottom: 15px;
+    width: 100%;
+    max-width: 115px;
+    margin-bottom: 10px;
 
     -webkit-transition: border-radius 1s;
 
@@ -531,7 +535,7 @@ p
 .skill-item p
 {
     font-size: 15px;
-    line-height: 1.5;
+    line-height: 1.65;
 }
 
 /**
@@ -954,13 +958,13 @@ p
     .content-wrapper.show-content
     {
         color: #fff;
-        border: 1px solid rgba(13, 26, 62, .65); 
-        background-color: rgba(13, 26, 62, .4);
+        border: 1px solid rgba(37, 59, 118, .1); 
+        background-color: rgba(8, 14, 30, .4);
         text-shadow: 1px 1px rgba(41, 41, 41, .8);
 
-        -webkit-backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px) saturate(115%);
 
-                backdrop-filter: blur(10px);
+                backdrop-filter: blur(10px) saturate(115%);
     }
     .content-wrapper .content-inner-wrapper::-webkit-scrollbar-track
     {
