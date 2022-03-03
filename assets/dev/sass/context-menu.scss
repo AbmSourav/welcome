@@ -1,0 +1,40 @@
+.context-menu {
+    &.show {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        background-color: rgba(255, 255, 255, 0.95);
+        color: #151515;
+        width: 100%;
+        max-width: 250px;
+        box-shadow: 1px 2px 30px 1px rgba(0, 0, 0, 0.45);
+        border: 1px solid rgba(196, 196, 196, 0.75);
+        border-radius: 4px;
+    }
+
+    &__item {
+        padding: 10px 14px;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px dotted rgba(196, 196, 196, 0.95);
+        cursor: pointer;
+
+        &:last-child {
+            border-bottom: none;
+        }
+
+        &:hover {
+            background-color: rgba(196, 196, 196, 0.95);
+        }
+
+        .title {
+            font-size: 15px;
+            color: #151515;
+        }
+
+        img {
+            width: 20px;
+            height: 20px;
+        }
+    }
+}

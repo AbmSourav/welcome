@@ -15,5 +15,5 @@ $short_detail = get_field( 'short_detail', 'option' );
 
 	<?php echo $short_detail; ?>
 	
-	<div class="hr-wrapper"><hr class="hr"></div>
+	<!-- <div class="hr-wrapper"><hr class="hr"></div> -->
 </div>

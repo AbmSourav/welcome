@@ -10,7 +10,9 @@ if ( empty( $projects ) ) return;
 <section class="content-wrapper portfolio" data-title="<?php _e( 'Portfolio', 'welcome' ); ?>">
 	<div class="content-header">
 		<h2 class="content-title"><?php _e( 'Portfolio', 'welcome' ); ?></h2>
-		<div class="content-close"><i class="fas fa-times"></i></div>
+		<div class="content-close" title="Close">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="#d60303" viewBox="0 0 24 24" width="22px" height="22px"><circle cx="12" cy="12" r="10" opacity="1"/></svg>
+        </div>
 	</div>
 	<div class="content-inner-wrapper">
 		<div class="card-wrapper">

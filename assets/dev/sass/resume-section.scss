@@ -23,13 +23,7 @@
 	transition-delay: .65s;
 	transition: transform .3s ease-in;
 
-	i {
-		font-size: 30px;
-		color: #02b702;
-		box-shadow: 1px 3px 8px rgba(0,0,0,.45);
-	}
-
-	&:hover i {
-		color: #028802;
+	svg:hover {
+		fill: #03ad03;
 	}
 }

@@ -19,13 +19,23 @@ get_header();
 	?>
 
 	<div class="main-menu">
-		<nav>
+		<nav class="main-nav">
 			<ul class="main-menu__list">
-				<li id="skills" class="main-menu__item" data-title="About & Skills"><i class="fas fa-poll-h"></i></li>
-				<li id="portfolio" class="main-menu__item" data-title="Portfolio"><i class="fas fa-portrait"></i></li>
-				<li id="experience" class="main-menu__item" data-title="Experience"><i class="fas fa-briefcase"></i></li>
-				<li id="resume" class="main-menu__item" data-title="Resume"><i class="fas fa-file-alt"></i></li>
-				<li id="contact" class="main-menu__item" data-title="Contact"><i class="fas fa-envelope"></i></li>
+				<li id="skills" class="main-menu__item" data-title="About & Skills">
+                    <img src="<?php echo get_template_directory_uri() . '/assets/img/about-skills.svg' ?>" alt="">
+                </li>
+				<li id="portfolio" class="main-menu__item" data-title="Portfolio">
+                    <img src="<?php echo get_template_directory_uri() . '/assets/img/portfolio.svg' ?>" alt="">
+                </li>
+				<li id="experience" class="main-menu__item" data-title="Experience">
+                    <img src="<?php echo get_template_directory_uri() . '/assets/img/briefcase.svg' ?>" alt="">
+                </li>
+				<li id="resume" class="main-menu__item" data-title="Resume">
+                    <img src="<?php echo get_template_directory_uri() . '/assets/img/resume.svg' ?>" alt="">
+                </li>
+				<li id="contact" class="main-menu__item" data-title="Contact">
+                    <img src="<?php echo get_template_directory_uri() . '/assets/img/contact.svg' ?>" alt="">
+                </li>
 			</ul>
 		</nav>
 		<div class="nav-title"></div>
