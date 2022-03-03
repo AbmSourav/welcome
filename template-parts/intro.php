@@ -9,7 +9,7 @@ $short_detail = get_field( 'short_detail', 'option' );
 ?>
 
 <div class="about">
-	<img class="profile-image" data-lazy="<?php echo esc_url( wp_get_attachment_url( $profile_image['id'] ) ); ?>" alt="Keramot Ul Islam">
+	<img class="profile-image show" src="<?php echo esc_url( wp_get_attachment_url( $profile_image['id'] ) ); ?>" alt="Keramot Ul Islam">
 	
 	<h1 class="name"><?php echo esc_html( $name ); ?></h1>
 

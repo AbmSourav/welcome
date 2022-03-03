@@ -8,8 +8,6 @@
 		// images lazy loading
 		setTimeout(function() {
 			bodyBg.css("background-image", "url(" + bodyBg.attr('data-lazy') +")");
-			profileImage.attr('src', profileImage.attr('data-lazy'))
-			profileImage.addClass('show')		
 
 			profileImage.css('border-radius', '30%');
 			mainMenuNav.addClass('menu-scale');
