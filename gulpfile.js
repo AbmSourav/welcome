@@ -11,7 +11,7 @@ const uglify = require("gulp-uglify");
 const sourcemaps = require('gulp-sourcemaps');
 
 const sassMain = "assets/dev/sass/welcome-main.scss";
-const sassFiles = "assets/dev/sass/**/*.scss";
+const sassFiles = "assets/dev/sass/*.scss";
 const jsFiles = "assets/dev/js/*.js";
 // const imageFiles = "assets/img/*";
 
