@@ -1132,6 +1132,10 @@ p
     {
         padding: 40px 20px 0;
     }
+    .content-wrapper.show-content .content-inner-wrapper .resume-wrapper
+    {
+        padding-top: 20px;
+    }
     .content-wrapper.show-content .card-wrapper
     {
         margin-bottom: 80px;
@@ -1201,14 +1205,15 @@ p
     }
     .resume .resume-download
     {
-        top: 100px;
-        right: 40px;
+        top: 55px;
+        right: 30px;
 
         padding: 5px 6px;
     }
-    .resume .resume-download i
+    .resume .resume-download svg
     {
-        font-size: 24px;
+        width: 30px;
+        height: 30px;
     }
     .contact .social-media
     {

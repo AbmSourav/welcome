@@ -17,6 +17,10 @@
 
 		.content-inner-wrapper {
 			padding: 40px 20px 0;
+
+            .resume-wrapper {
+                padding-top: 20px;
+            }
 		}
 		.card-wrapper {
 			margin-bottom: 80px;
@@ -82,13 +86,14 @@
 
 	.resume {
 		.resume-download {
-			top: 100px;
-			right: 40px;
+			top: 55px;
+			right: 30px;
 			padding: 5px 6px;
 
-			i {
-				font-size: 24px;
-			}
+			svg {
+                width: 30px;
+                height: 30px;
+            }
 		}
 	}
 
