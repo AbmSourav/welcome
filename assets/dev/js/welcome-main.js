@@ -16,9 +16,6 @@
 		setTimeout(function() {
 			profileImage.css('border-radius', '50%');
 			mainMenuNav.removeClass('menu-scale');
-			
-			hr.css('height', '');
-			hr.css('opacity', '');
 		}, 400);
 	});
 	
@@ -46,22 +43,11 @@
             const item = $(this);
             navListItem.each(function(index, el) {
                 if ( item.data('title') == $(el).data('title') ) {
-                    $(this).children().css({
-                        'width': '86px',
-                        'transform': 'scale(1.8) translateY(-15px)'
-                    });
-
                     if ($(navListItem[index - 1])) {
-                        $(navListItem[index - 1]).children().css({
-                            'width': '68px',
-                            'transform': 'scale(1.2) translateY(-10px)'
-                        })
+                        $(navListItem[index - 1]).addClass('secondary-active');
                     }
                     if ($(navListItem[index + 1])) {
-                         $(navListItem[index + 1]).children().css({
-                            'width': '68px',
-                            'transform': 'scale(1.2) translateY(-10px)'
-                        })
+                        $(navListItem[index + 1]).addClass('secondary-active');
                     }
                 }
             } )
@@ -71,14 +57,12 @@
                 navTitle.addClass('show-title');
             }, 300)
 		}, function() {
-
 			navTitle.removeClass('show-title');
 			navTitle.html('');
             navListItem.each(function(index, el) {
-                $(navListItem[index]).children().css({
-                    'width': '60px',
-                    'transform': 'scale(1) translateY(1px)'
-                });
+                if ($(this).hasClass('secondary-active')) {
+                    $(this).removeClass('secondary-active');
+                }
             })
 		})
 

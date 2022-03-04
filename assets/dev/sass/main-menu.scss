@@ -50,6 +50,13 @@
         transition: transform .2s ease-in-out;
     }
 
+    &.secondary-active {
+        img {
+            width: 68px;
+            transform: scale(1.2) translateY(-10px);
+        }
+    }
+
 	&.active::after {
 		content: '';
 		width: 8px;
@@ -67,8 +74,8 @@
 	}
 	&:hover {
         img {
-            width: 80px;
-		    transform: scale(1.5) translateY(-15px);
+            width: 85px;
+		    transform: scale(1.8) translateY(-15px);
         }
 	}
 }
