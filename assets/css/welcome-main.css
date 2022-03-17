@@ -467,8 +467,8 @@ p
 }
 .about .profile-image
 {
-    width: 100%;
-    max-width: 115px;
+    width: 125px;
+    height: 120px;
     margin-bottom: 10px;
 
     -webkit-transition: border-radius 1s;
@@ -477,6 +477,10 @@ p
 
     opacity: 0;
     border-radius: 50%;
+
+    -o-object-fit: cover;
+
+       object-fit: cover;
 }
 .about .profile-image.show
 {
