@@ -5,9 +5,9 @@
 	.content-wrapper {
 		&.show-content {
 			color: #fff;
-			text-shadow: 1px 1px rgba(41, 41, 41, .8);
-			background-color: rgba(14, 21, 40, 0.4);
-			backdrop-filter: blur(14px) saturate(120%);
+			// text-shadow: 1px 1px rgba(41, 41, 41, .8);
+			background-color: rgba(14, 21, 40, 0.5);
+			backdrop-filter: blur(30px) saturate(120%);
 			border: 1px solid rgba(14, 21, 40, .075);
 		}
 
@@ -36,8 +36,8 @@
 
     .context-menu {
         &.show {
-            background-color: rgba(29, 36, 58, 0.3);
-            backdrop-filter: blur(12px);
+            background-color: rgba(29, 36, 58, 0.4);
+            backdrop-filter: blur(20px);
             border: 1px solid rgba(57, 74, 124, .3);
         }
 

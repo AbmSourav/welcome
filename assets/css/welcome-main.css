@@ -223,13 +223,17 @@ p
         -ms-flex-align: center;
             align-items: center;
 }
+.content-header .content-title
+{
+    font-size: clamp(20px, 4vw, 26px);
+}
 
 .content-inner-wrapper
 {
     overflow-y: auto; 
 
     height: 100%;
-    padding: 60px 110px 0;
+    padding: clamp(25px, 4vw, 60px) clamp(25px, 4vw, 110px) 0;
 }
 .content-inner-wrapper ::-webkit-scrollbar
 {
@@ -320,7 +324,7 @@ p
 
     content: '';
 
-    border: 1px solid rgba(57, 74, 124, .8);
+    border: 1px solid rgba(27, 37, 66, .8);
     border-radius: 10px;
     background-color: rgba(29, 36, 58, .32);
 
@@ -331,8 +335,6 @@ p
 
 .main-menu__item
 {
-    font-size: 50px;
-
     position: relative;
 
     display: -webkit-box;
@@ -360,8 +362,8 @@ p
 }
 .main-menu__item img
 {
-    width: 60px;
-    height: 60px;
+    width: clamp(40px, 4vw, 60px);
+    height: clamp(40px, 4vw, 60px);
 
     -webkit-transition: -webkit-transform .2s ease-in-out;
 
@@ -488,6 +490,8 @@ p
 }
 .about .name
 {
+    font-size: clamp(22px, 4vw, 36px); 
+
     margin-bottom: 2px;
 }
 .about p
@@ -1025,12 +1029,11 @@ p
     {
         color: #fff;
         border: 1px solid rgba(14, 21, 40, .075); 
-        background-color: rgba(14, 21, 40, .4);
-        text-shadow: 1px 1px rgba(41, 41, 41, .8);
+        background-color: rgba(14, 21, 40, .5);
 
-        -webkit-backdrop-filter: blur(14px) saturate(120%);
+        -webkit-backdrop-filter: blur(30px) saturate(120%);
 
-                backdrop-filter: blur(14px) saturate(120%);
+                backdrop-filter: blur(30px) saturate(120%);
     }
     .content-wrapper .content-inner-wrapper::-webkit-scrollbar-track
     {
@@ -1058,11 +1061,11 @@ p
     .context-menu.show
     {
         border: 1px solid rgba(57, 74, 124, .3); 
-        background-color: rgba(29, 36, 58, .3);
+        background-color: rgba(29, 36, 58, .4);
 
-        -webkit-backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(20px);
 
-                backdrop-filter: blur(12px);
+                backdrop-filter: blur(20px);
     }
     .context-menu__item
     {
@@ -1132,10 +1135,6 @@ p
     {
         padding: 0 10px 0 20px;
     }
-    .content-wrapper.show-content .content-inner-wrapper
-    {
-        padding: 40px 20px 0;
-    }
     .content-wrapper.show-content .content-inner-wrapper .resume-wrapper
     {
         padding-top: 20px;
@@ -1165,11 +1164,6 @@ p
     .main-menu .main-menu__item:last-child
     {
         margin-right: 0;
-    }
-    .main-menu .main-menu__item img
-    {
-        width: 40px;
-        height: 40px;
     }
     .main-menu .main-menu__item.secondary-active img
     {

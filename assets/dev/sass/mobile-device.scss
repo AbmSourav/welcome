@@ -16,7 +16,6 @@
 		}
 
 		.content-inner-wrapper {
-			padding: 40px 20px 0;
 
             .resume-wrapper {
                 padding-top: 20px;
@@ -43,11 +42,6 @@
 			&:last-child {
 				margin-right: 0;
 			}
-
-            img {
-                width: 40px;
-                height: 40px;
-            }
 
             &.secondary-active {
                 img {

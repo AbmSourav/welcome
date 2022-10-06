@@ -25,7 +25,7 @@
         position: absolute;
         border-radius: 10px;
         backdrop-filter: blur(6px);
-        border: 1px solid rgba(57, 74, 124, 0.8);
+        border: 1px solid rgba(27, 37, 66, 0.8);
         background-color: rgba(29, 36, 58, 0.32);
         top: 0;
         left: 0;
@@ -38,15 +38,15 @@
 	position: relative;
 	list-style: none;
 	cursor: pointer;
-	font-size: 50px;
+	// font-size: 50px;
 	margin-right: 15px;
 	color: #fff;
 	transform: scale(1);
     transition: transform .4s ease-in-out;
 
     img {
-        width: 60px;
-        height: 60px;
+        width: clamp(40px, 4vw, 60px);
+        height: clamp(40px, 4vw, 60px);
         transition: transform .2s ease-in-out;
     }
 
