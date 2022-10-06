@@ -76,7 +76,10 @@
             }
 
 			contentInput.removeClass('show-content');
-			const listData = $(this).data('title'); 
+			const listData = $(this).data('title');
+
+			// header menu title
+			$('.header-menu .section-title').html(listData)
 
 			contentInput.each( function(key, input) {
 				if (listData == $(this).data('title')) {
@@ -85,7 +88,7 @@
 					contentClose();
 				}
 				
-				if (listData == 'About & Skills') {
+				if (listData == 'About') {
 					skillsAnimation();
 				}
 				if (listData == 'Portfolio') {
@@ -111,6 +114,7 @@
 				
 				contentInput.removeClass('show-content');
 				$(navListItem).removeClass('active');
+				$('.header-menu .section-title').html('');
 			})
 		}
 
@@ -151,7 +155,7 @@
 		}
 
 		const contactSocialIconAnimation = function() {
-			const socialIconList = $('.social-media li');
+			const socialIconList = $('#contact-social-media li');
 			const contactDetail = $('.contact-detail');
 			const blogDetail = $('.blog-detail');
 

@@ -13,7 +13,7 @@ if ( ! function_exists( 'get_field' ) ) return;
 	</div>
 
 	<div class="content-inner-wrapper">
-		<div class="social-media">
+		<div id="contact-social-media" class="social-media">
 			<?php
 			$social_icons = get_field( 'social_icons', 'option' );
 			if ( ! empty( $social_icons ) ) :

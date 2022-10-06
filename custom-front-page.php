@@ -5,12 +5,15 @@
 defined( 'ABSPATH' ) || die();
 
 get_header();
+
+
+get_template_part( 'template-parts/header-menu' );
 ?>
 
 <div class="container">
 
 	<?php 
-	get_template_part( 'template-parts/intro' ); 
+	get_template_part( 'template-parts/intro' );
 	get_template_part( 'template-parts/skills' );
 	get_template_part( 'template-parts/portfolio' ); 
 	get_template_part( 'template-parts/experience' );
@@ -21,7 +24,7 @@ get_header();
 	<div class="main-menu">
 		<nav class="main-nav">
 			<ul class="main-menu__list">
-				<li id="skills" class="main-menu__item" data-title="About & Skills">
+				<li id="skills" class="main-menu__item" data-title="About">
                     <img src="<?php echo get_template_directory_uri() . '/assets/img/about-skills.svg' ?>" alt="">
                 </li>
 				<li id="portfolio" class="main-menu__item" data-title="Portfolio">
