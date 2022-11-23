@@ -3,7 +3,7 @@ defined( 'ABSPATH' ) || die();
 ?>
 
 <div class="context-menu">
-    <div class="context-menu__item" id="skills" data-title="About & Skills">
+    <div class="context-menu__item" id="skills" data-title="About">
         <img src="<?php echo get_template_directory_uri() . '/assets/img/about-skills.svg' ?>" alt="about & skills">
         <div class="title"><?php _e( 'About', 'welcome' ); ?></div>
     </div>

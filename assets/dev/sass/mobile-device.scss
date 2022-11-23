@@ -19,10 +19,22 @@
 
             .resume-wrapper {
                 padding-top: 20px;
+
+				img {
+					max-width: 100%;
+				}
             }
 		}
 		.card-wrapper {
 			margin-bottom: 80px;
+		}
+
+		.job-wrapper {
+			display: block;
+
+			.job-detail {
+				margin-bottom: 35px;
+			}
 		}
 	}
 
