@@ -23,10 +23,12 @@
     &::before {
         content: '';
         position: absolute;
-        border-radius: 10px;
-        backdrop-filter: blur(6px);
-        border: 1px solid rgba(27, 37, 66, 0.8);
+        border-radius: 20px;
+        backdrop-filter: blur(10px) saturate(120%);
+        border: 1px solid rgba(253, 167, 162, .15);
         background-color: rgba(29, 36, 58, 0.32);
+		background: rgba(254, 235, 238, .8);
+		background: linear-gradient(90deg, rgba(148, 148, 148, 0.18) 0%, rgba(230, 181, 177, 0.3) 43%, rgba(253, 167, 162, 0.4) 100%);
         top: 0;
         left: 0;
         bottom: 0;
