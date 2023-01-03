@@ -433,13 +433,17 @@ p
 
     content: '';
 
-    border: 1px solid rgba(27, 37, 66, .8);
-    border-radius: 10px;
+    border: 1px solid rgba(253, 167, 162, .15);
+    border-radius: 20px;
+    background: rgba(254, 235, 238, .8);
+    background: -webkit-gradient(linear, left top, right top, from(rgba(148, 148, 148, .18)), color-stop(43%, rgba(230, 181, 177, .3)), to(rgba(253, 167, 162, .4)));
+    background: -webkit-linear-gradient(left, rgba(148, 148, 148, .18) 0%, rgba(230, 181, 177, .3) 43%, rgba(253, 167, 162, .4) 100%);
+    background: linear-gradient(90deg, rgba(148, 148, 148, .18) 0%, rgba(230, 181, 177, .3) 43%, rgba(253, 167, 162, .4) 100%);
     background-color: rgba(29, 36, 58, .32);
 
-    -webkit-backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(10px) saturate(120%);
 
-            backdrop-filter: blur(6px);
+            backdrop-filter: blur(10px) saturate(120%);
 }
 
 .main-menu__item
@@ -766,12 +770,11 @@ p
 {
     display: grid;
 
-    margin-bottom: 80px;
+    margin-bottom: 120px;
 
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 20px;
-    grid-row-gap: 25px;
+    grid-row-gap: 45px;
 }
 
 .job-detail
@@ -783,8 +786,12 @@ p
 }
 .job-detail:first-child
 {
-    grid-column: 1/span 3;
-    grid-row: 1/1;
+    padding: 15px;
+
+    border-radius: 5px;
+    background-color: rgba(14, 21, 40, .1);
+
+    grid-column: 1/span 2;
 }
 .job-detail:last-child
 {
@@ -813,11 +820,17 @@ p
     font-size: 12px;
 
     margin-top: 4px;
-    margin-left: 10px;
+    margin-left: 6px;
+
+    color: #e09caa;
+}
+.job-detail .designation span svg
+{
+    fill: #fdbcc9;
 }
 .job-detail .work-duration
 {
-    font-size: 14px;
+    font-size: 12px;
 
     color: #595959;
 }
@@ -831,6 +844,8 @@ p
 }
 .job-detail .responsibilities li
 {
+    font-size: 14px;
+
     margin-bottom: 10px;
 }
 .job-detail .responsibilities li:last-child
@@ -1220,8 +1235,6 @@ p
     }
     .experience .job-detail .work-duration
     {
-        font-size: 14px;
-
         color: #d4d2d2;
     }
 }

@@ -20,7 +20,9 @@ if ( empty( $company ) ) return;
 				<div class="job-detail">
 					<div class="designation">
 						<h4><?php echo esc_html( $team['designation'] ); ?></h4>
-						<span><i class="fas fa-minus"></i></span>
+						<span>
+							<svg width="15px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19,11H5a1,1,0,0,0,0,2H19a1,1,0,0,0,0-2Z"/></svg>
+						</span>
 						<h6><?php echo esc_html( $team['company_name'] ); ?></h6>
 					</div>
 					<div class="work-duration"><?php echo esc_html( $team['time_duration'] ); ?></div>
