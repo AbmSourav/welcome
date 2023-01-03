@@ -1,20 +1,15 @@
 .distignore
 .editorconfig
-.git
+.git/*
 .gitignore
 .travis.yml
 circle.yml
 .DS_Store
 .phpcs-log.txt
+.github
 
-package.json
-package-lock.json
-node_modules
-
-vendor
-composer.json
-composer.lock
-
+node_modules/*
 gulpfile.js
-
-assets/dev
+package-lock.json
+package.json
+assets/dev/*
