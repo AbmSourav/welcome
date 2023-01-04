@@ -25,19 +25,24 @@ get_template_part( 'template-parts/header-menu' );
 		<nav class="main-nav">
 			<ul class="main-menu__list">
 				<li id="skills" class="main-menu__item" data-title="About">
-                    <img src="<?php echo get_template_directory_uri() . '/assets/img/about-skills.svg' ?>" alt="">
+					<div class="main-menu__item-caption"></div>
+                    <img src="<?php echo get_template_directory_uri() . '/assets/img/about-skills.svg' ?>" alt="About">
                 </li>
 				<li id="portfolio" class="main-menu__item" data-title="Portfolio">
-                    <img src="<?php echo get_template_directory_uri() . '/assets/img/portfolio.svg' ?>" alt="">
+					<div class="main-menu__item-caption"></div>
+                    <img src="<?php echo get_template_directory_uri() . '/assets/img/portfolio.svg' ?>" alt="Portfolio">
                 </li>
 				<li id="experience" class="main-menu__item" data-title="Experience">
-                    <img src="<?php echo get_template_directory_uri() . '/assets/img/briefcase.svg' ?>" alt="">
+					<div class="main-menu__item-caption"></div>
+                    <img src="<?php echo get_template_directory_uri() . '/assets/img/briefcase.svg' ?>" alt="Experience">
                 </li>
 				<li id="resume" class="main-menu__item" data-title="Resume">
-                    <img src="<?php echo get_template_directory_uri() . '/assets/img/resume.svg' ?>" alt="">
+					<div class="main-menu__item-caption"></div>
+                    <img src="<?php echo get_template_directory_uri() . '/assets/img/resume.svg' ?>" alt="Resume">
                 </li>
 				<li id="contact" class="main-menu__item" data-title="Contact">
-                    <img src="<?php echo get_template_directory_uri() . '/assets/img/contact.svg' ?>" alt="">
+					<div class="main-menu__item-caption"></div>
+                    <img src="<?php echo get_template_directory_uri() . '/assets/img/contact.svg' ?>" alt="Contact">
                 </li>
 			</ul>
 		</nav>

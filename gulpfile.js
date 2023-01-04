@@ -69,5 +69,5 @@ function watch() {
 	gulp.watch(jsFiles, scripts);
 	// gulp.watch(imageFiles, image);
 }
-// gulp.task("default", gulp.series(style, scripts, image, watch));
-gulp.task("default", gulp.series(style, scripts));
+// gulp.task("default", gulp.series(style, scripts));
+gulp.task("default", gulp.series(style, scripts, watch));

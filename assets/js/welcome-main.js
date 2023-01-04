@@ -41,29 +41,11 @@
 		
 		$(navListItem).hover(function () {
             const item = $(this);
-            navListItem.each(function(index, el) {
-                if ( item.data('title') == $(el).data('title') ) {
-                    if ($(navListItem[index - 1])) {
-                        $(navListItem[index - 1]).addClass('secondary-active');
-                    }
-                    if ($(navListItem[index + 1])) {
-                        $(navListItem[index + 1]).addClass('secondary-active');
-                    }
-                }
-            } )
-
-            navTitle.html($(this).data('title'));
-            setTimeout(function() {
-                navTitle.addClass('show-title');
-            }, 300)
+			$(item.children('.main-menu__item-caption')).html(item.data('title'))
+			$(item.children('.main-menu__item-caption')).addClass('show')
 		}, function() {
-			navTitle.removeClass('show-title');
-			navTitle.html('');
-            navListItem.each(function(index, el) {
-                if ($(this).hasClass('secondary-active')) {
-                    $(this).removeClass('secondary-active');
-                }
-            })
+			const item = $(this);
+			$(item.children('.main-menu__item-caption')).removeClass('show')
 		})
 
 		// menu click

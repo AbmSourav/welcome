@@ -80,6 +80,23 @@
 		    transform: scale(1.8) translateY(-15px);
         }
 	}
+
+	&-caption {
+		display: none;
+
+		&.show {
+			display: block;
+			position: absolute;
+			top: -80px;
+			left: calc(50% - 33px);
+			z-index: 2;
+			padding: 5px 8px;
+			background-color: rgba(14,21,40,.5);
+			border-radius: 5px;
+			font-size: 14px;
+			color: #c5c5c5;
+		}
+	}
 }
 
 .main-menu nav.menu-scale {
