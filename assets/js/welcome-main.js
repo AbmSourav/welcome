@@ -165,6 +165,7 @@
 			$(blogDetail).css('opacity', '1');
 		}
 
+		console.log(" %c Hey, What's up...!!! ", 'background: #ffff00')
 	})
 
 })( jQuery );
