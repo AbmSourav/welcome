@@ -31,8 +31,19 @@
             const x = e.pageX;
             const y = e.pageY;
             contextMenu.addClass('show');
+
             contextMenu.css('top', y + 5 + 'px');
             contextMenu.css('left', x + 5 + 'px');
+			contextMenu.css('right', 'auto');
+			contextMenu.css('bottom', 'auto');
+			if ((window.innerWidth - x) <= 255) {
+				contextMenu.css('left', 'auto');
+				contextMenu.css('right', '20px');
+			}
+			if ((window.innerHeight - y) <= 210) {
+				contextMenu.css('top', 'auto');
+				contextMenu.css('bottom', '20px');
+			}
         }
         // document click remove context menu
         $(document).click(function() {
