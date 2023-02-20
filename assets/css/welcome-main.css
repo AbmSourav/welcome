@@ -188,7 +188,7 @@ p
 
             transform: rotateX(0deg) rotateY(0deg) translateY(50%) scale(1);
 
-    background-color: rgba(255, 255, 255, .75);
+    background-color: rgba(14, 21, 40, .7);
 }
 .content-wrapper .content-title
 {
@@ -766,13 +766,13 @@ p
 
     margin-bottom: 15px;
 }
+.portfolio .work-card .work-meta span
+{
+    color: #d4d2d2;
+}
 .portfolio .work-card .work-meta a
 {
-    font-size: 16px;
-
     padding: 6px;
-
-    color: #272727;
 }
 .portfolio .work-card .work-title
 {
@@ -1181,13 +1181,13 @@ p
 {
     .content-wrapper.show-content
     {
-        color: #fff;
+        color: #e5e5e5;
         border: 1px solid rgba(14, 21, 40, .075);
-        background-color: rgba(14, 21, 40, .5);
+        background-color: rgba(14, 21, 40, .6);
 
-        -webkit-backdrop-filter: blur(30px) saturate(120%);
+        -webkit-backdrop-filter: blur(20px) saturate(120%);
 
-                backdrop-filter: blur(30px) saturate(120%);
+                backdrop-filter: blur(20px) saturate(120%);
     }
     .content-wrapper .content-inner-wrapper::-webkit-scrollbar-track
     {

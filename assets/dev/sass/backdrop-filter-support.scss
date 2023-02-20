@@ -4,10 +4,9 @@
  @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
 	.content-wrapper {
 		&.show-content {
-			color: #fff;
-			// text-shadow: 1px 1px rgba(41, 41, 41, .8);
-			background-color: rgba(14, 21, 40, 0.5);
-			backdrop-filter: blur(30px) saturate(120%);
+			color: #e5e5e5;
+			background-color: rgba(14, 21, 40, 0.6);
+			backdrop-filter: blur(20px) saturate(120%);
 			border: 1px solid rgba(14, 21, 40, .075);
 		}
 
