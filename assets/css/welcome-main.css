@@ -235,7 +235,7 @@ p
     overflow-y: auto;
 
     height: 100%;
-    padding: clamp(25px, 4vw, 60px) clamp(25px, 4vw, 110px) 0;
+    padding: clamp(25px, 4vw, 60px) clamp(25px, 6vw, 230px) 0;
 }
 .content-inner-wrapper ::-webkit-scrollbar
 {
@@ -691,6 +691,13 @@ p
     margin-top: 10px;
 }
 
+.skill-item
+{
+    padding: 10px 30px 20px;
+
+    border-radius: 4px;
+    background-color: rgba(14, 21, 40, .1);
+}
 .skill-item p
 {
     font-size: 15px;
