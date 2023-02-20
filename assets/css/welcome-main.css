@@ -181,8 +181,8 @@ p
     position: fixed;
     bottom: 50%;
 
-    width: 65vw;
-    height: 75vh;
+    width: 72vw;
+    height: 70vh;
 
     -webkit-transform: rotateX(0deg) rotateY(0deg) translateY(50%) scale(1);
 
