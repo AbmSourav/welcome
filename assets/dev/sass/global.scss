@@ -93,15 +93,24 @@ p {
 
 	&.show-content {
 		position: fixed;
-		width: 72vw;
-		height: 70vh;
+		width: 75vw;
+		height: 73vh;
 		bottom: 50%;
 		transform: rotateX(0deg) rotateY(0deg) translateY(50%) scale(1);
+		backdrop-filter: blur(20px) saturate(120%);
 		background-color: rgba(14, 21, 40, .7);
+		color: #e5e5e5;
+	}
+
+	.content-inner-wrapper {
+		&::-webkit-scrollbar-track {
+			background-color: rgba(4, 13, 21, 0.1);
+		}
 	}
 
 	.content-title {
-		color: #151515;
+		color: #fff;
+		text-shadow: none;
 	}
 }
 
@@ -111,7 +120,7 @@ p {
     align-items: center;
     position: sticky;
     top: 0;
-    background-color:rgba(255, 255, 255, 0.6);
+    background-color: rgba(14, 21, 40, 0.2);
 	padding: 0 20px;
 
 	.content-title {
