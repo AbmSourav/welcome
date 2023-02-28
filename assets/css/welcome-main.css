@@ -707,15 +707,16 @@ p
 
 .skill-item
 {
+    margin: 0 30px;
     padding: 10px 30px 20px;
 
     border-radius: 4px;
-    background-color: rgba(14, 21, 40, .1);
+    background-color: rgba(14, 21, 40, .35);
 }
 .skill-item p
 {
     font-size: 15px;
-    line-height: 1.65;
+    line-height: 1.68;
 }
 
 /**
@@ -849,7 +850,7 @@ p
     padding: 15px;
 
     border-radius: 5px;
-    background-color: rgba(14, 21, 40, .1);
+    background-color: rgba(14, 21, 40, .3);
 
     grid-column: 1/span 2;
 }
@@ -943,7 +944,7 @@ p
     position: fixed;
     z-index: 2;
     top: 102px;
-    right: 160px;
+    right: 135px;
 
     padding: 7px 8px;
 
@@ -1349,10 +1350,15 @@ p
     {
         margin-bottom: 100px;
     }
+    .professional-skills.skill-item
+    {
+        margin: 0;
+        padding: 10px 10px 20px;
+    }
     .portfolio .card-wrapper
     {
         grid-template-columns: repeat(1, 1fr);
-        grid-gap: 40px;
+        grid-gap: 20px;
     }
     .portfolio .work-card
     {
