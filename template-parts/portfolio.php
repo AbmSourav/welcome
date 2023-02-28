@@ -38,11 +38,13 @@ if ( empty( $projects ) ) return;
 							<?php echo esc_html( $project['project_description'] ); ?>
 						</p>
 					</div>
-					<div class="work-media">
-						<a href="<?php echo esc_url( $project['project_link'] ); ?>">
-							<img src="<?php echo esc_url( wp_get_attachment_image_url( $project['project_image']['id'] ) ); ?>" alt="<?php echo esc_attr( $project['project_title'] ); ?>">
-						</a>
-					</div>
+					<?php if ( ! empty( $project['project_image'] ) ) : ?>
+						<div class="work-media">
+							<a href="<?php echo esc_url( $project['project_link'] ); ?>">
+								<img src="<?php echo esc_url( wp_get_attachment_image_url( $project['project_image']['id'] ) ); ?>" alt="<?php echo esc_attr( $project['project_title'] ); ?>">
+							</a>
+						</div>
+					<?php endif; ?>
 				</div>
 			<?php endforeach; ?>
 		</div>
