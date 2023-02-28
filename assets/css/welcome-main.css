@@ -1399,7 +1399,7 @@ p
     }
     .professional-skills.skill-item
     {
-        margin: 0;
+        margin: 0 0 100px;
         padding: 10px 10px 20px;
     }
     .portfolio .card-wrapper
