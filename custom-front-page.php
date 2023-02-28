@@ -15,7 +15,7 @@ get_template_part( 'template-parts/header-menu' );
 	<?php 
 	get_template_part( 'template-parts/intro' );
 	get_template_part( 'template-parts/skills' );
-	get_template_part( 'template-parts/portfolio' ); 
+	get_template_part( 'template-parts/projects' ); 
 	get_template_part( 'template-parts/experience' );
 	get_template_part( 'template-parts/resume' );
 	get_template_part( 'template-parts/contact' ); 
@@ -28,9 +28,9 @@ get_template_part( 'template-parts/header-menu' );
 					<div class="main-menu__item-caption"></div>
                     <img src="<?php echo get_template_directory_uri() . '/assets/img/about-skills.svg' ?>" alt="About">
                 </li>
-				<li id="portfolio" class="main-menu__item" data-title="Portfolio">
+				<li id="projects" class="main-menu__item" data-title="Projects">
 					<div class="main-menu__item-caption"></div>
-                    <img src="<?php echo get_template_directory_uri() . '/assets/img/portfolio.svg' ?>" alt="Portfolio">
+                    <img src="<?php echo get_template_directory_uri() . '/assets/img/projects.svg' ?>" alt="Portfolio">
                 </li>
 				<li id="experience" class="main-menu__item" data-title="Experience">
 					<div class="main-menu__item-caption"></div>

@@ -77,6 +77,7 @@
 
 			// header menu title
 			$('.header-menu .section-title').html(listData)
+			console.log('listdata', listData)
 
 			contentInput.each( function(key, input) {
 				if (listData == $(this).data('title')) {
@@ -88,7 +89,7 @@
 				if (listData == 'About') {
 					skillsAnimation();
 				}
-				if (listData == 'Portfolio') {
+				if (listData == 'Projects') {
 					portfolioAnimation();
 				}
 				if (listData == 'Experience') {
