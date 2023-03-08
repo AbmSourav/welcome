@@ -179,7 +179,7 @@ p
 .content-wrapper.show-content
 {
     position: fixed;
-    bottom: 50%;
+    bottom: 53%;
 
     width: 75vw;
     height: 73vh;
@@ -419,7 +419,7 @@ p
 .main-menu nav
 {
     position: absolute;
-    bottom: 28px;
+    bottom: 45px;
     left: 50%;
 
     -webkit-transition: bottom .3s;
@@ -507,8 +507,8 @@ p
 }
 .main-menu__item img
 {
-    width: clamp(40px, 4vw, 60px);
-    height: clamp(40px, 4vw, 60px);
+    width: clamp(44px, 4vw, 60px);
+    height: clamp(44px, 4vw, 60px);
 
     -webkit-transition: -webkit-transform .2s ease-in-out;
 
