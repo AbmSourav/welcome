@@ -14,12 +14,14 @@
  .job-detail {
 	opacity: 0;
 	transition: opacity .8s;
+	background-color: rgba(255, 255, 255, 0.7);
+	box-shadow: 1px 2px 5px 1px rgba(203, 198, 198, 0.20);
+	padding: 30px 35px;
+	border-radius: 6px;
+	color: #444;
 
 	&:first-child {
 		grid-column: 1 / span 2;
-		background-color: rgba(14, 21, 40, .3);
-		padding: 15px;
-		border-radius: 5px;
 	}
 
 	&:last-child {
@@ -30,22 +32,21 @@
 		display: flex;
 		margin-bottom: 10px;
 		align-items: center;
-		color: #fdbcc9;
+		color: #b6845e;
 
 		h6, span {
 			font-size: 12px;
 			margin-top: 4px;
 			margin-left: 6px;
-			color: #e09caa;
 		}
 		span svg {
-			fill: #fdbcc9;
+			fill: #b6845e;
 		}
 	}
 
 	.work-duration {
 		font-size: 12px;
-		color: #595959;
+		color: #868686;
 	}
 
 	.responsibilities {
@@ -56,6 +57,7 @@
 		}
 		li {
 			font-size: 14px;
+			color: #444;
 			margin-bottom: 10px;
 
 			&:last-child {

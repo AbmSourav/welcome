@@ -14,8 +14,9 @@
 	.work-card {
 		display: flex;
 		padding: 20px 25px;
-		background-color: rgba(4, 13, 21, .2);
-		border-radius: 4px;
+		background-color: rgba(255, 255, 255, 0.7);
+		border-radius: 6px;
+		box-shadow: 1px 2px 5px 1px rgba(203, 198, 198, 0.20);
 		opacity: 0;
 		transition: opacity .2s ease-in;
 		position: relative;
@@ -47,14 +48,14 @@
 			font-size: 12px;
 
 			span {
-				color: #d4d2d2;
+				color: #868686;
 			}
 
 			a {
 				padding: 6px;
 
 				svg {
-					fill: #d4d2d2;
+					fill: #868686;
 				}
 			}
 		}
@@ -62,7 +63,7 @@
 			font-size: 18px;
 
 			a {
-				color: #fdbcc9;
+				color: #b6845e;
 				text-decoration: none;
 
 				&:hover {

@@ -18,7 +18,7 @@ $genarel_skills = get_field( 'genarel_skills', 'option' );
 	
 	<div class="content-inner-wrapper">
 		<div class="skill-item professional-skills">
-			<p class="content-detail"><?php echo $about_section; ?></p>
+			<?php echo $about_section; ?>
 		</div>
 	</div>
 </section>

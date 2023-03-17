@@ -188,12 +188,17 @@ p
 
             transform: rotateX(0deg) rotateY(0deg) translateY(50%) scale(1);
 
-    color: #e5e5e5;
-    background-color: rgba(14, 21, 40, .7);
+    color: #444;
+    border-top: 2px solid rgba(255, 255, 255, .5);
+    border-right: 1px solid rgba(255, 255, 255, .3);
+    border-bottom: 2.5px solid rgba(255, 255, 255, .5);
+    border-left: 5px solid rgba(255, 255, 255, .5);
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, .3);
 
-    -webkit-backdrop-filter: blur(20px) saturate(120%);
+    -webkit-backdrop-filter: blur(20px) brightness(160%);
 
-            backdrop-filter: blur(20px) saturate(120%);
+            backdrop-filter: blur(20px) brightness(160%);
 }
 .content-wrapper .content-inner-wrapper::-webkit-scrollbar-track
 {
@@ -201,30 +206,8 @@ p
 }
 .content-wrapper .content-title
 {
-    color: #fff;
+    color: #444;
     text-shadow: none;
-}
-
-.context-menu.show
-{
-    border: 1px solid rgba(57, 74, 124, .3);
-    background-color: rgba(29, 36, 58, .4);
-
-    -webkit-backdrop-filter: blur(20px);
-
-            backdrop-filter: blur(20px);
-}
-.context-menu__item
-{
-    border-bottom: 1px dotted rgba(57, 74, 124, .3);
-}
-.context-menu__item:hover
-{
-    background-color: rgba(29, 36, 58, .5);
-}
-.context-menu__item .title
-{
-    color: #fff;
 }
 
 .content-header
@@ -243,7 +226,7 @@ p
 
     padding: 0 20px;
 
-    background-color: rgba(14, 21, 40, .2);
+    background-color: rgba(255, 255, 255, .1);
 
     -webkit-box-pack: justify;
 
@@ -322,7 +305,9 @@ p
 
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
-    background-color: rgba(14, 21, 40, .7);
+    background-color: rgba(255, 255, 255, .6);
+    -webkit-box-shadow: 1px 2px 5px 1px rgba(88, 88, 88, .2);
+            box-shadow: 1px 2px 5px 1px rgba(88, 88, 88, .2);
 
     -webkit-box-pack: justify;
 
@@ -365,7 +350,7 @@ p
 
     margin-left: 20px;
 
-    color: #cbcbcb;
+    color: #444;
 }
 .header-menu .menu-right .social-media
 {
@@ -398,14 +383,14 @@ p
 }
 .header-menu .menu-right .social-media li a:hover svg
 {
-    fill: #fff;
+    fill: #b6845e;
 }
 .header-menu .menu-right .social-media li svg
 {
     width: 18px;
     height: 18px;
 
-    fill: #cbcbcb;
+    fill: #727272;
 }
 
 /**
@@ -734,15 +719,27 @@ p
 .skill-item
 {
     margin: 0 30px;
-    padding: 10px 30px 20px;
+    padding: 30px 35px;
 
-    border-radius: 4px;
-    background-color: rgba(14, 21, 40, .35);
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, .7);
+    -webkit-box-shadow: 1px 2px 5px 1px rgba(203, 198, 198, .2);
+            box-shadow: 1px 2px 5px 1px rgba(203, 198, 198, .2);
 }
 .skill-item p
 {
     font-size: 15px;
     line-height: 1.68;
+
+    margin-top: 10px;
+}
+.skill-item p:last-child
+{
+    margin-top: 0;
+}
+.skill-item p:first-child
+{
+    margin-top: 0;
 }
 
 /**
@@ -776,8 +773,10 @@ p
     transition: opacity .2s ease-in;
 
     opacity: 0;
-    border-radius: 4px;
-    background-color: rgba(4, 13, 21, .2);
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, .7);
+    -webkit-box-shadow: 1px 2px 5px 1px rgba(203, 198, 198, .2);
+            box-shadow: 1px 2px 5px 1px rgba(203, 198, 198, .2);
 }
 .portfolio .work-card .work-media
 {
@@ -825,7 +824,7 @@ p
 }
 .portfolio .work-card .work-meta span
 {
-    color: #d4d2d2;
+    color: #868686;
 }
 .portfolio .work-card .work-meta a
 {
@@ -833,7 +832,7 @@ p
 }
 .portfolio .work-card .work-meta a svg
 {
-    fill: #d4d2d2;
+    fill: #868686;
 }
 .portfolio .work-card .work-title
 {
@@ -843,7 +842,7 @@ p
 {
     text-decoration: none;
 
-    color: #fdbcc9;
+    color: #b6845e;
 }
 .portfolio .work-card .work-title a:hover
 {
@@ -866,18 +865,21 @@ p
 
 .job-detail
 {
+    padding: 30px 35px;
+
     -webkit-transition: opacity .8s;
+
     transition: opacity .8s;
 
     opacity: 0;
+    color: #444;
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, .7);
+    -webkit-box-shadow: 1px 2px 5px 1px rgba(203, 198, 198, .2);
+            box-shadow: 1px 2px 5px 1px rgba(203, 198, 198, .2);
 }
 .job-detail:first-child
 {
-    padding: 15px;
-
-    border-radius: 5px;
-    background-color: rgba(14, 21, 40, .3);
-
     grid-column: 1/span 2;
 }
 .job-detail:last-child
@@ -893,7 +895,7 @@ p
 
     margin-bottom: 10px;
 
-    color: #fdbcc9;
+    color: #b6845e;
 
     -webkit-box-align: center;
 
@@ -910,18 +912,16 @@ p
 
     margin-top: 4px;
     margin-left: 6px;
-
-    color: #e09caa;
 }
 .job-detail .designation span svg
 {
-    fill: #fdbcc9;
+    fill: #b6845e;
 }
 .job-detail .work-duration
 {
     font-size: 12px;
 
-    color: #595959;
+    color: #868686;
 }
 .job-detail .responsibilities
 {
@@ -936,6 +936,8 @@ p
     font-size: 14px;
 
     margin-bottom: 10px;
+
+    color: #444;
 }
 .job-detail .responsibilities li:last-child
 {
@@ -963,6 +965,9 @@ p
             transition-delay: .3s;
 
     opacity: 0;
+    border-radius: 6px;
+    -webkit-box-shadow: 1px 2px 5px 1px rgba(203, 198, 198, .2);
+            box-shadow: 1px 2px 5px 1px rgba(203, 198, 198, .2);
 }
 
 .resume-download
@@ -1016,6 +1021,15 @@ p
 
             align-items: center;
 }
+.contact .content-inner-wrapper .contact-wrap
+{
+    padding: 35px 30px;
+
+    border-radius: 6px;
+    background: rgba(255, 255, 255, .7);
+    -webkit-box-shadow: 1px 2px 5px 1px rgba(203, 198, 198, .2);
+            box-shadow: 1px 2px 5px 1px rgba(203, 198, 198, .2);
+}
 .contact .social-media
 {
     display: -webkit-box;
@@ -1023,7 +1037,15 @@ p
     display: -ms-flexbox;
     display: flex;
 
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+
+    -webkit-box-pack: center;
+
+    -webkit-justify-content: center;
+
+        -ms-flex-pack: center;
+
+            justify-content: center;
 }
 .contact .social-media li
 {
@@ -1178,6 +1200,7 @@ p
     display: -ms-flexbox;
 
     display: flex;
+    overflow: hidden;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
@@ -1187,12 +1210,18 @@ p
     width: 100%;
     max-width: 250px;
 
-    color: #151515;
-    border: 1px solid rgba(196, 196, 196, .75);
-    border-radius: 4px;
-    background-color: rgba(255, 255, 255, .95);
+    color: #444;
+    border-right: 1px solid rgba(255, 255, 255, .7);
+    border-bottom: 1px solid rgba(196, 196, 196, .75);
+    border-left: 2px solid rgba(255, 255, 255, .7);
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, .6);
     -webkit-box-shadow: 1px 2px 30px 1px rgba(0, 0, 0, .45);
             box-shadow: 1px 2px 30px 1px rgba(0, 0, 0, .45);
+
+    -webkit-backdrop-filter: blur(12px);
+
+            backdrop-filter: blur(12px);
 }
 .context-menu__item
 {
@@ -1205,7 +1234,7 @@ p
 
     cursor: pointer;
 
-    border-bottom: 1px dotted rgba(196, 196, 196, .95);
+    border-bottom: 1px dotted rgba(184, 182, 182, .95);
 
     -webkit-box-pack: justify;
 
@@ -1221,13 +1250,13 @@ p
 }
 .context-menu__item:hover
 {
-    background-color: rgba(196, 196, 196, .95);
+    background-color: rgba(255, 255, 255, .2);
 }
 .context-menu__item .title
 {
     font-size: 15px;
 
-    color: #151515;
+    color: #444;
 }
 .context-menu__item img
 {
@@ -1235,92 +1264,6 @@ p
     height: 20px;
 }
 
-/**
- * == BackDrop Support ==
- */
-@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none))
-{
-    .content-wrapper.show-content
-    {
-        color: #e5e5e5;
-        border: 1px solid rgba(14, 21, 40, .075);
-        background-color: rgba(14, 21, 40, .6);
-
-        -webkit-backdrop-filter: blur(20px) saturate(120%);
-
-                backdrop-filter: blur(20px) saturate(120%);
-    }
-    .content-wrapper .content-inner-wrapper::-webkit-scrollbar-track
-    {
-        background-color: rgba(4, 13, 21, .1);
-    }
-    .content-wrapper .content-header
-    {
-        background-color: rgba(14, 21, 40, .2);
-    }
-    .content-wrapper .content-title
-    {
-        color: #fff;
-        text-shadow: none;
-    }
-    .main-menu .nav-title
-    {
-        background-color: rgba(71, 87, 145, .32);
-
-        -webkit-backdrop-filter: blur(5px);
-
-                backdrop-filter: blur(5px);
-    }
-    .context-menu.show
-    {
-        border: 1px solid rgba(57, 74, 124, .3);
-        background-color: rgba(29, 36, 58, .4);
-
-        -webkit-backdrop-filter: blur(20px);
-
-                backdrop-filter: blur(20px);
-    }
-    .context-menu__item
-    {
-        border-bottom: 1px dotted rgba(57, 74, 124, .3);
-    }
-    .context-menu__item:hover
-    {
-        background-color: rgba(29, 36, 58, .5);
-    }
-    .context-menu__item .title
-    {
-        color: #fff;
-    }
-    .social-media li a
-    {
-        text-shadow: 1px 2px rgba(15, 15, 15, .7);
-    }
-    .skill-item .skill-title
-    {
-        color: #fdbcc9;
-    }
-    .portfolio .work-card
-    {
-        background-color: rgba(4, 13, 21, .2);
-    }
-    .portfolio .work-card .work-title a
-    {
-        color: #fdbcc9;
-    }
-    .portfolio .work-card .work-meta a
-    {
-        color: #fff;
-    }
-    .experience .job-detail .designation
-    {
-        color: #fdbcc9;
-    }
-    .experience .job-detail .work-duration
-    {
-        color: #d4d2d2;
-    }
-}
 /**
  * == Mobile Device ==
  */
@@ -1360,6 +1303,11 @@ p
     .content-wrapper.show-content .job-wrapper .job-detail
     {
         margin-bottom: 35px;
+        padding: 15px;
+    }
+    .content-wrapper.show-content .job-wrapper .job-detail h4
+    {
+        font-size: 16px;
     }
     .main-menu
     {
@@ -1399,8 +1347,8 @@ p
     }
     .professional-skills.skill-item
     {
-        margin: 0 0 100px;
-        padding: 10px 10px 20px;
+        margin: 0 0 50px;
+        padding: 15px;
     }
     .portfolio .card-wrapper
     {
@@ -1436,9 +1384,17 @@ p
         width: 30px;
         height: 30px;
     }
+    .contact .content-inner-wrapper .contact-wrap
+    {
+        padding: 20px;
+    }
     .contact .social-media
     {
         margin-bottom: 30px;
+    }
+    .contact .contact-detail-wrapper p
+    {
+        font-size: 14px;
     }
     .contact .contact-detail
     {
@@ -1458,16 +1414,16 @@ p
     }
     .contact .messenger-contact
     {
-        margin-top: 12px;
+        margin-top: 5px;
         margin-left: 0;
     }
     .contact .messenger-contact span
     {
-        margin-left: 2px;
+        margin-left: 8px;
     }
     .contact .blog-detail
     {
-        margin-top: 20px;
+        margin-top: 15px;
     }
     .main-menu nav
     {
