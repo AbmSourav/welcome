@@ -1192,6 +1192,7 @@ p
 .context-menu.show
 {
     position: fixed;
+    z-index: 1;
 
     display: -webkit-box;
 
