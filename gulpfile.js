@@ -7,13 +7,11 @@ const csso = require('gulp-csso');
 const rename = require("gulp-rename");
 const concat = require("gulp-concat");
 const uglify = require("gulp-uglify");
-// const imagemin = require('gulp-imagemin');
 const sourcemaps = require('gulp-sourcemaps');
 
 const sassMain = "assets/dev/sass/welcome-main.scss";
 const sassFiles = "assets/dev/sass/*.scss";
 const jsFiles = "assets/dev/js/*.js";
-// const imageFiles = "assets/img/*";
 
 // browser prefix
 const AUTOPREFIXER_BROWSERS = [
@@ -56,18 +54,9 @@ function scripts() {
         .pipe(gulp.dest("assets/js"));
 }
 
-// function image() {
-// 	return gulp.src(imageFiles)
-// 		.pipe(imagemin([
-// 			imagemin.mozjpeg({quality: 25, progressive: true})
-// 		]))
-// 		.pipe(gulp.dest('assets/images'));
-// }
-
 function watch() {
     gulp.watch(sassFiles, style);
 	gulp.watch(jsFiles, scripts);
-	// gulp.watch(imageFiles, image);
 }
-// gulp.task("default", gulp.series(style, scripts));
+
 gulp.task("default", gulp.series(style, scripts, watch));
