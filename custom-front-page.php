@@ -18,36 +18,37 @@ get_template_part( 'template-parts/header-menu' );
 	get_template_part( 'template-parts/projects' ); 
 	get_template_part( 'template-parts/experience' );
 	get_template_part( 'template-parts/resume' );
-	get_template_part( 'template-parts/contact' ); 
+	get_template_part( 'template-parts/contact' );
+	// get_template_part( 'template-parts/nav' );
 	?>
 
-	<div class="main-menu">
+	<!-- <div class="main-menu">
 		<nav class="main-nav">
 			<ul class="main-menu__list">
 				<li id="skills" class="main-menu__item" data-title="About">
 					<div class="main-menu__item-caption"></div>
-                    <img src="<?php echo get_template_directory_uri() . '/assets/img/about-skills.svg' ?>" alt="About">
+                    <img src="<?php // echo get_template_directory_uri() . '/assets/img/about-skills.svg' ?>" alt="About">
                 </li>
 				<li id="projects" class="main-menu__item" data-title="Projects">
 					<div class="main-menu__item-caption"></div>
-                    <img src="<?php echo get_template_directory_uri() . '/assets/img/projects.svg' ?>" alt="Portfolio">
+                    <img src="<?php // echo get_template_directory_uri() . '/assets/img/projects.svg' ?>" alt="Portfolio">
                 </li>
 				<li id="experience" class="main-menu__item" data-title="Experience">
 					<div class="main-menu__item-caption"></div>
-                    <img src="<?php echo get_template_directory_uri() . '/assets/img/briefcase.svg' ?>" alt="Experience">
+                    <img src="<?php // echo get_template_directory_uri() . '/assets/img/briefcase.svg' ?>" alt="Experience">
                 </li>
 				<li id="resume" class="main-menu__item" data-title="Resume">
 					<div class="main-menu__item-caption"></div>
-                    <img src="<?php echo get_template_directory_uri() . '/assets/img/resume.svg' ?>" alt="Resume">
+                    <img src="<?php // echo get_template_directory_uri() . '/assets/img/resume.svg' ?>" alt="Resume">
                 </li>
 				<li id="contact" class="main-menu__item" data-title="Contact">
 					<div class="main-menu__item-caption"></div>
-                    <img src="<?php echo get_template_directory_uri() . '/assets/img/contact.svg' ?>" alt="Contact">
+                    <img src="<?php // echo get_template_directory_uri() . '/assets/img/contact.svg' ?>" alt="Contact">
                 </li>
 			</ul>
 		</nav>
 		<div class="nav-title"></div>
-	</div>
+	</div> -->
 
 </div>
 

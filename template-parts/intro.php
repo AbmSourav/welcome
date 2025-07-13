@@ -16,4 +16,6 @@ $short_detail = get_field( 'short_detail', 'option' );
 	<?php echo $short_detail; ?>
 	
 	<!-- <div class="hr-wrapper"><hr class="hr"></div> -->
+
+	<?php require_once dirname(__FILE__) . "/nav.php"; // get_template_part( 'template-parts/intro' ); ?>
 </div>

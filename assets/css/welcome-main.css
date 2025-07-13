@@ -400,11 +400,16 @@ p
 {
     position: fixed;
     bottom: 0;
+    left: 50%;
+}
+.main-menu.hide
+{
+    display: none;
 }
 .main-menu nav
 {
     position: absolute;
-    bottom: 45px;
+    bottom: 30vh;
     left: 50%;
 
     -webkit-transition: bottom .3s;
@@ -414,6 +419,10 @@ p
         -ms-transform: translateX(-50%);
             transform: translateX(-50%);
 }
+.main-menu nav.bottom-transition
+{
+    bottom: 2vh;
+}
 
 .main-menu__list
 {
@@ -422,15 +431,11 @@ p
     display: -ms-flexbox;
     display: flex;
 
-    padding: 4px 15px;
+    padding: 4px 35px;
 
-    -webkit-transition: -webkit-transform .4s ease-in-out;
-
-    transition: -webkit-transform .4s ease-in-out;
-
-    transition: transform .4s ease-in-out;
-
-    transition: transform .4s ease-in-out, -webkit-transform .4s ease-in-out;
+    border-radius: 15px;
+    -webkit-box-shadow: 1px 2px 5px rgba(0, 0, 0, .87);
+            box-shadow: 1px 2px 5px rgba(0, 0, 0, .87);
 
     -webkit-box-pack: center;
 
@@ -649,7 +654,7 @@ p
 }
 .about .name
 {
-    font-size: clamp(22px, 4vw, 36px);
+    font-size: clamp(22px, 4vw, 34px);
 
     margin-bottom: 2px;
 

@@ -3,7 +3,11 @@
 	$(window).load(function() {
 		const bodyBg = $('.body-bg-image');
 		const profileImage = $('.profile-image');
+		const mainMenu = $('.main-menu');
 		const mainMenuNav = $('.main-menu nav');
+
+		mainMenu.removeClass('hide');
+		console.log(window.innerHeight);
 
 		// images lazy loading
 		setTimeout(function() {
@@ -12,13 +16,21 @@
 			profileImage.css('border-radius', '30%');
 			mainMenuNav.addClass('menu-scale');
 		}, 5)
-		
+
 		setTimeout(function() {
 			profileImage.css('border-radius', '50%');
 			mainMenuNav.removeClass('menu-scale');
+			mainMenuNav.removeClass('bottom-transition');
+
+			let innerHeightPercentage = window.innerHeight * 0.03;
+			if (innerHeightPercentage > 30) {
+				innerHeightPercentage = 32;
+			}
+			
+			mainMenuNav.css('bottom', innerHeightPercentage + 'vh');
 		}, 400);
 	});
-	
+
 	$(document).ready(function() {
 		const contentInput = $('.content-wrapper');
 		const navListItem = $('.main-menu__item')
@@ -45,6 +57,7 @@
 				contextMenu.css('bottom', '20px');
 			}
         }
+
         // document click remove context menu
         $(document).click(function() {
             contextMenu.removeClass('show');
