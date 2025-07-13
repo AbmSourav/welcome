@@ -1,0 +1,17 @@
+{
+    "name": "sourav/welcome",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Sourav\\Welcome\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Keramot UL Islam"
+        }
+    ],
+    "require-dev": {
+        "codesvault/wp-bundler": "^1.2"
+    }
+}

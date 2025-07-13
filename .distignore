@@ -1,6 +1,6 @@
 .distignore
 .editorconfig
-.git/*
+.git
 .gitignore
 .travis.yml
 circle.yml
@@ -8,8 +8,13 @@ circle.yml
 .phpcs-log.txt
 .github
 
-node_modules/*
+node_modules
 gulpfile.js
 package-lock.json
 package.json
-assets/dev/*
+
+assets/dev
+
+composer.json
+composer.lock
+bundler

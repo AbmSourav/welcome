@@ -1,0 +1,16 @@
+#!/usr/bin/env php
+<?php
+
+use CodesVault\Bundle\Bundler;
+use CodesVault\Bundle\Setup;
+
+require __DIR__ . "/vendor/autoload.php";
+
+$bundler = new Bundler(__DIR__);
+
+$bundler
+    ->createProductionRepo('welcome')
+    ->command("npm run dev")
+    ->cleanUp()
+    ->zip('welcome')
+    ->executionTime();

@@ -7,7 +7,6 @@
 		const mainMenuNav = $('.main-menu nav');
 
 		mainMenu.removeClass('hide');
-		console.log(window.innerHeight);
 
 		// images lazy loading
 		setTimeout(function() {
