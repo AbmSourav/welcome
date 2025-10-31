@@ -503,7 +503,7 @@ p
 
     display: flex;
 
-    margin-right: 15px;
+    padding: 0 12px;
 
     list-style: none;
 
@@ -558,19 +558,23 @@ p
     border-radius: 50%;
     background-color: #fff;
 }
+.main-menu__item:first-child
+{
+    padding-left: 0;
+}
 .main-menu__item:last-child
 {
-    margin-right: 0;
+    padding-right: 0;
 }
 .main-menu__item:hover img
 {
     width: 85px;
 
-    -webkit-transform: scale(1.8) translateY(-15px);
+    -webkit-transform: scale(1.4) translateY(-15px);
 
-        -ms-transform: scale(1.8) translateY(-15px);
+        -ms-transform: scale(1.4) translateY(-15px);
 
-            transform: scale(1.8) translateY(-15px);
+            transform: scale(1.4) translateY(-15px);
 }
 .main-menu__item-caption
 {

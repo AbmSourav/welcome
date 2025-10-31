@@ -51,7 +51,7 @@
 	position: relative;
 	list-style: none;
 	cursor: pointer;
-	margin-right: 15px;
+	padding: 0 12px;
 	color: #fff;
 	transform: scale(1);
     transition: transform .4s ease-in-out;
@@ -81,13 +81,17 @@
 		transform: translateX(-50%);
 	}
 
-	&:last-child {
-		margin-right: 0;
+	&:first-child {
+		padding-left: 0;
 	}
+	&:last-child {
+		padding-right: 0;
+	}
+
 	&:hover {
         img {
             width: 85px;
-		    transform: scale(1.8) translateY(-15px);
+		    transform: scale(1.4) translateY(-15px);
         }
 	}
 
