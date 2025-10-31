@@ -32,6 +32,18 @@ body.page-template-custom-front-page {
 	height: 100vh;
 	position: relative;
 	overflow-x: hidden;
+
+	.overlay {
+		&.show {
+			content: "";
+			position: absolute;
+			z-index: 2;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			left: 0;
+		}
+	}
 }
 
 .body-bg-image {
@@ -93,6 +105,7 @@ p {
 
 	&.show-content {
 		position: fixed;
+		z-index: 3;
 		width: 75vw;
 		height: 73vh;
 		bottom: 53%;
@@ -126,7 +139,7 @@ p {
     position: sticky;
     top: 0;
     backdrop-filter: blur(10px);
-	padding: 0 20px;
+	padding: 5px 20px 8px;
 
 	.content-title {
 		font-size: clamp(20px, 4vw, 26px);
@@ -157,6 +170,13 @@ p {
 .content-close {
 	display: inline-block;
 	cursor: pointer;
-	padding: 12px 5px 12px 12px;
-    
+	padding: 10px 10px 8px 12px;
+}
+
+.content-close .close-btn {
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    border-radius: 50%;
+    box-shadow: 1px 2px 3px #000000d6;
 }

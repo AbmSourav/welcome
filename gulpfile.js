@@ -59,4 +59,10 @@ function watch() {
 	gulp.watch(jsFiles, scripts);
 }
 
+// Build task for production (without watch)
+function build(done) {
+    gulp.series(style, scripts)(done);
+}
+
 gulp.task("default", gulp.series(style, scripts, watch));
+gulp.task("build", build);

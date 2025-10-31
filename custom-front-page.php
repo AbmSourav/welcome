@@ -11,6 +11,7 @@ get_template_part( 'template-parts/header-menu' );
 ?>
 
 <div class="container">
+	<div class="overlay"></div>
 
 	<?php 
 	get_template_part( 'template-parts/intro' );

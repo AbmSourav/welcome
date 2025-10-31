@@ -7,7 +7,6 @@
 		const mainMenuNav = $('.main-menu nav');
 
 		mainMenu.removeClass('hide');
-		console.log(window.innerHeight);
 
 		// images lazy loading
 		setTimeout(function() {
@@ -94,6 +93,7 @@
 			contentInput.each( function(key, input) {
 				if (listData == $(this).data('title')) {
 					$('.about').css('visibility', 'hidden');
+					$('.overlay').addClass('show');
 					$(this).addClass('show-content');
 					contentClose();
 				}
@@ -120,6 +120,7 @@
 			const closeIcon = $('.content-close');
 
 			$(closeIcon).on('click', function() {
+				$('.overlay').removeClass('show');
 				$('.about').css('visibility', 'visible');
 				
 				contentInput.removeClass('show-content');
@@ -177,6 +178,16 @@
 			$(contactDetail).css('transform', 'scale(1) rotateY(0deg)');
 			$(blogDetail).css('opacity', '1');
 		}
+
+		$('.overlay').on('click', function() {
+			if (! $(this).hasClass('show')) {
+				return;
+			}
+
+			$('.about').css('visibility', 'visible');
+			contentInput.removeClass('show-content');
+			$('.overlay').removeClass('show');
+		});
 
 		console.log(" %c Hey, What's up...!!! ", 'background: #ffff00')
 	})

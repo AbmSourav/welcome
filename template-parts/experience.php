@@ -10,10 +10,10 @@ if ( empty( $company ) ) return;
 	<div class="content-header">
 		<h2 class="content-title"><?php _e( 'Experience', 'welcome' ); ?></h2>
 		<div class="content-close" title="Close">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="#d60303" viewBox="0 0 24 24" width="22px" height="22px"><circle cx="12" cy="12" r="10" opacity="1"/></svg>
+            <div class="close-btn"></div>
         </div>
 	</div>
-	
+
 	<div class="content-inner-wrapper">
 		<div class="job-wrapper">
 			<?php foreach ( $company as $team ) : ?>
