@@ -1016,7 +1016,7 @@ p
 
 .resume-preview
 {
-    font-size: 18px;
+    font-size: 15px;
 
     margin-bottom: 5px;
 
@@ -1026,7 +1026,6 @@ p
 .resume-wrapper img
 {
     width: auto;
-    max-width: 80%;
 
     -webkit-transition: opacity .3s ease-in;
 

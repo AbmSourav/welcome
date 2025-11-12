@@ -12,14 +12,13 @@
 }
 
 .resume-preview {
-    font-size: 18px;
+    font-size: 15px;
     color: #919191;
     margin-bottom: 5px;
 }
 
 .resume-wrapper img {
 	width: auto;
-	max-width: 80%;
 	opacity: 0;
 	transition-delay: .3s;
 	transition: opacity .3s ease-in;
