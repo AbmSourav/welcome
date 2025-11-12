@@ -16,13 +16,16 @@ $download_link = get_field( 'download_link', 'option' );
 		</div>
 	</div>
 	<div class="content-inner-wrapper">
-		<a download href="<?php echo esc_url( $download_link ); ?>" class="resume-download" title="Download Resume (pdf)">
-            <svg fill="#02b702" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="45px" height="45px">
-                <path d="M19.355,10.036C18.674,6.595,15.641,4,12,4C9.108,4,6.603,5.639,5.352,8.036C2.343,8.36,0,10.906,0,14c0,3.314,2.686,6,6,6 h13c2.761,0,5-2.239,5-5C24,12.36,21.948,10.221,19.355,10.036z M12,18l-5-5h3V9h4v4h3L12,18z"/>
-            </svg>
-        </a>
 		<div class="resume-wrapper">
-			<img loading="lazy" src="<?php echo esc_url( wp_get_attachment_image_url( $resume['id'], 'full' ) ); ?>" alt="Resume">
+			<div class="resume-wrapper-inner">
+				<a download href="<?php echo esc_url( $download_link ); ?>" class="resume-download" title="Download Resume (pdf)">
+					<svg fill="#02b702" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="45px" height="45px">
+						<path d="M19.355,10.036C18.674,6.595,15.641,4,12,4C9.108,4,6.603,5.639,5.352,8.036C2.343,8.36,0,10.906,0,14c0,3.314,2.686,6,6,6 h13c2.761,0,5-2.239,5-5C24,12.36,21.948,10.221,19.355,10.036z M12,18l-5-5h3V9h4v4h3L12,18z"/>
+					</svg>
+				</a>
+				<div class="resume-preview"><?php echo esc_html("Short Preview"); ?></div>
+				<img loading="lazy" src="<?php echo esc_url( wp_get_attachment_image_url( $resume['id'], 'full' ) ); ?>" alt="Resume">
+			</div>
 		</div>
 	</div>
 </section>
