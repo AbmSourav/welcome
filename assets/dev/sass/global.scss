@@ -106,8 +106,8 @@ p {
 	&.show-content {
 		position: fixed;
 		z-index: 3;
-		width: 75vw;
-		height: 73vh;
+		width: 77vw;
+		height: 74vh;
 		bottom: 53%;
 		transform: rotateX(0deg) rotateY(0deg) translateY(50%) scale(1);
 		backdrop-filter: blur(20px) brightness(160%);
@@ -146,7 +146,7 @@ p {
 	}
 }
 .content-inner-wrapper {
-	padding: clamp(25px, 4vw, 60px) clamp(25px, 6vw, 230px) 0;
+	padding: clamp(25px, 4vw, 60px) clamp(25px, 4vw, 230px) 0;
 	height: 100%;
 	overflow-y: auto;
 

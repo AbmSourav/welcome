@@ -193,8 +193,8 @@ p
     z-index: 3;
     bottom: 53%;
 
-    width: 75vw;
-    height: 73vh;
+    width: 77vw;
+    height: 74vh;
 
     -webkit-transform: rotateX(0deg) rotateY(0deg) translateY(50%) scale(1);
 
@@ -262,7 +262,7 @@ p
     overflow-y: auto;
 
     height: 100%;
-    padding: clamp(25px, 4vw, 60px) clamp(25px, 6vw, 230px) 0;
+    padding: clamp(25px, 4vw, 60px) clamp(25px, 4vw, 230px) 0;
 }
 .content-inner-wrapper ::-webkit-scrollbar
 {
@@ -901,6 +901,8 @@ p
 
 .job-detail
 {
+    line-height: 1.3;
+
     padding: 30px 35px;
 
     -webkit-transition: opacity .8s;
@@ -916,6 +918,8 @@ p
 }
 .job-detail:first-child
 {
+    padding: 30px 80px 30px 50px;
+
     grid-column: 1/span 2;
 }
 .job-detail:last-child
@@ -1380,6 +1384,10 @@ p
         margin-bottom: 35px;
         padding: 15px;
     }
+    .content-wrapper.show-content .job-wrapper .job-detail:first-child
+    {
+        padding: 15px;
+    }
     .content-wrapper.show-content .job-wrapper .job-detail h4
     {
         font-size: 16px;
@@ -1387,6 +1395,14 @@ p
     .main-menu
     {
         bottom: 10px;
+    }
+    .main-menu .main-menu__list
+    {
+        padding: 4px 25px;
+    }
+    .main-menu .main-menu__item
+    {
+        padding: 0 10px 0 0;
     }
     .main-menu .main-menu__item:hover img
     {
@@ -1401,6 +1417,7 @@ p
     .main-menu .main-menu__item:last-child
     {
         margin-right: 0;
+        padding: 0;
     }
     .main-menu .main-menu__item.secondary-active img
     {
