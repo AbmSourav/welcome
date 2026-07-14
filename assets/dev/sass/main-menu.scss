@@ -29,6 +29,11 @@
     padding: 4px 35px;
 	box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.87);
 	border-radius: 15px;
+	transition: all .8s;
+
+	&:hover {
+		scale: 1.03;
+	}
 
     &::before {
         content: '';
@@ -48,11 +53,12 @@
 
 .main-menu__item {
     display: flex;
+	flex-direction: column;
 	position: relative;
 	list-style: none;
 	cursor: pointer;
-	padding: 0 12px;
-	color: #fff;
+	margin-right: 40px;
+	padding-bottom: 5px;
 	transform: scale(1);
     transition: transform .4s ease-in-out;
 
@@ -71,8 +77,8 @@
 
 	&.active::after {
 		content: '';
-		width: 8px;
-		height: 8px;
+		width: 6px;
+		height: 6px;
 		position: absolute;
 		bottom: -8px;
 		background-color: #fff;
@@ -85,32 +91,19 @@
 		padding-left: 0;
 	}
 	&:last-child {
-		padding-right: 0;
+		margin-right: 0;
 	}
 
 	&:hover {
         img {
-            width: 85px;
+            // width: 85px;
 		    transform: scale(1.4) translateY(-15px);
         }
 	}
 
-	&-caption {
-		display: none;
-
-		&.show {
-			display: block;
-			position: absolute;
-			top: -80px;
-			left: calc(50% - 38px);
-			z-index: 2;
-			padding: 5px 8px;
-			background-color: rgba(14, 21, 40, .45);
-			border-radius: 5px;
-			font-size: 14px;
-			color: #ededed;
-			backdrop-filter: blur(2px);
-		}
+	&-label {
+		font-size: 10px;
+		color: #bababa;
 	}
 }
 

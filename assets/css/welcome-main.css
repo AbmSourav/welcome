@@ -262,7 +262,7 @@ p
     overflow-y: auto;
 
     height: 100%;
-    padding: clamp(25px, 4vw, 60px) clamp(25px, 4vw, 230px) 0;
+    padding: clamp(25px, 4vw, 60px) clamp(25px, 4vw, 230px);
 }
 .content-inner-wrapper ::-webkit-scrollbar
 {
@@ -456,6 +456,10 @@ p
 
     padding: 4px 35px;
 
+    -webkit-transition: all .8s;
+
+    transition: all .8s;
+
     border-radius: 15px;
     -webkit-box-shadow: 1px 2px 5px rgba(0, 0, 0, .87);
             box-shadow: 1px 2px 5px rgba(0, 0, 0, .87);
@@ -467,6 +471,10 @@ p
         -ms-flex-pack: center;
 
             justify-content: center;
+}
+.main-menu__list:hover
+{
+    scale: 1.03;
 }
 .main-menu__list::before
 {
@@ -502,8 +510,14 @@ p
     display: -ms-flexbox;
 
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
 
-    padding: 0 12px;
+    margin-right: 40px;
+    padding-bottom: 5px;
 
     list-style: none;
 
@@ -515,8 +529,6 @@ p
     -webkit-transform: scale(1);
         -ms-transform: scale(1);
             transform: scale(1);
-
-    color: #fff;
 }
 .main-menu__item img
 {
@@ -547,8 +559,8 @@ p
     bottom: -8px;
     left: 50%;
 
-    width: 8px;
-    height: 8px;
+    width: 6px;
+    height: 6px;
 
     content: '';
     -webkit-transform: translateX(-50%);
@@ -564,42 +576,19 @@ p
 }
 .main-menu__item:last-child
 {
-    padding-right: 0;
+    margin-right: 0;
 }
 .main-menu__item:hover img
 {
-    width: 85px;
-
     -webkit-transform: scale(1.4) translateY(-15px);
-
         -ms-transform: scale(1.4) translateY(-15px);
-
             transform: scale(1.4) translateY(-15px);
 }
-.main-menu__item-caption
+.main-menu__item-label
 {
-    display: none;
-}
-.main-menu__item-caption.show
-{
-    font-size: 14px;
+    font-size: 10px;
 
-    position: absolute;
-    z-index: 2;
-    top: -80px;
-    left: calc(50% - 38px);
-
-    display: block;
-
-    padding: 5px 8px;
-
-    color: #ededed;
-    border-radius: 5px;
-    background-color: rgba(14, 21, 40, .45);
-
-    -webkit-backdrop-filter: blur(2px);
-
-            backdrop-filter: blur(2px);
+    color: #bababa;
 }
 
 .main-menu nav.menu-scale
@@ -767,7 +756,7 @@ p
     font-size: 15px;
     line-height: 1.68;
 
-    margin-top: 10px;
+    margin-top: 20px;
 }
 .skill-item p:last-child
 {

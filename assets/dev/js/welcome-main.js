@@ -61,19 +61,6 @@
         $(document).click(function() {
             contextMenu.removeClass('show');
         });
-		
-		$(navListItem).hover(function () {
-            const item = $(this);
-			if ($(window).width() < 650) return;
-
-			$(item.children('.main-menu__item-caption')).html(item.data('title'))
-			$(item.children('.main-menu__item-caption')).addClass('show')
-		}, function() {
-			const item = $(this);
-			if ($(window).width() < 650) return;
-
-			$(item.children('.main-menu__item-caption')).removeClass('show')
-		})
 
 		// menu click
 		$(document).on('click', ".main-menu__item, .context-menu__item", function() {

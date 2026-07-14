@@ -14,6 +14,7 @@ package-lock.json
 package.json
 
 assets/dev
+assets/css/welcome-main.min.css.map
 
 composer.json
 composer.lock
