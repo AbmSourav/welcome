@@ -55,7 +55,8 @@
 		}
 
 		.main-menu__item {
-			padding: 0 10px 0 0;
+			padding: 0 8px 0 0;
+			margin-right: 10px;
 
 			&:hover {
 				img {
@@ -75,6 +76,10 @@
                     transform: scale(1.2) translateY(-6px);
                 }
             }
+
+			.main-menu__item-label {
+				font-size: 8px;
+			}
 		}
 	}
 

@@ -532,8 +532,8 @@ p
 }
 .main-menu__item img
 {
-    width: clamp(44px, 4vw, 60px);
-    height: clamp(44px, 4vw, 60px);
+    width: clamp(40px, 4vw, 60px);
+    height: clamp(40px, 4vw, 60px);
 
     -webkit-transition: -webkit-transform .2s ease-in-out;
 
@@ -1391,7 +1391,8 @@ p
     }
     .main-menu .main-menu__item
     {
-        padding: 0 10px 0 0;
+        margin-right: 10px;
+        padding: 0 8px 0 0;
     }
     .main-menu .main-menu__item:hover img
     {
@@ -1417,6 +1418,10 @@ p
             -ms-transform: scale(1.2) translateY(-6px);
 
                 transform: scale(1.2) translateY(-6px);
+    }
+    .main-menu .main-menu__item .main-menu__item-label
+    {
+        font-size: 8px;
     }
     .professional-skills
     {
